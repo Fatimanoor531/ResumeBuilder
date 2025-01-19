@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESUME BUILDER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dynamic Resume Builder BY Fatima Noor Sheikh</h1>
+
+    <form id="resumeForm">
+
+        <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name: </label>
+        <input type="name" name="name" placeholder="Enter Your Name" id="name" required />
+        <br /><br />
+
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          placeholder="xyz@email.com"
+          id="email"
+          required
+        />
+        <br /><br />
+
+        <label for="contact">Phone number: </label>
+        <input
+          type="number"
+          name="number"
+          placeholder="0317-*******"
+          id="contact"
+          required
+        />
+        <br /><br />
+
+        <label for="address">Address: </label>
+        <input
+          type="address"
+          name="address"
+          placeholder="Enter Your Address"
+          id="address"
+          required
+        />
+        <br /><br />
+
+        <label for="gender">Select Your Gender: </label> Male
+        <input  class="ton" type="radio" name="gender" id="gender" /> Female
+        <input required type="radio" name="gender" id="gender" /> <br /><br />
+
+       
+      </fieldset>
+      <br><br>
+
+      <!-- Education -->
+
+      <fieldset>
+      <legend>Education</legend>
+
+      <form>
+        <label for="qualification">Qualification:</label>
+        <input type="qualification" id="qualification" name="qualification"><br><br>
+      
+
+        <label for="Certified">Certified: </label>
+        <input class="ton" required type="radio" />Degree
+        <input type="radio" /> Certificate <input type="radio" /> Diploma
+        <br /><br />
+      
+        
+        <label for="course">Course/Field of study:</label>
+        <input type="text" id="course" name="course"><br><br>
+        
+        <label for="duration">Duration:</label>
+        <input type="date" id="start_date" name="start_date">
+        <label for="end_date">to</label>
+        <input type="date" id="end_date" name="end_date"><br><br>
+        
+        <label for="percentage">Percentage/CGPA:</label>
+        <input type="number" id="percentage" name="percentage"><br><br>
+    
+      </fieldset>
+      <br><br>
+
+      <!-- Experience -->
+
+      <fieldset>
+        <legend>Experience </legend>
+            
+              <label for="company_name">Company Name: </label>
+              <input type="text" id="company_name" name="company_name"><br><br>
+            
+            
+              <label for="job_title">Job Title/Designation:</label>
+              <input type="text" id="job_title" name="job_title"><br><br>
+            
+            
+                <label for="duration">Duration:</label>
+                <input type="date" id="start_date" name="start_date">
+                <label for="end_date">to</label>
+                <input type="date" id="end_date" name="end_date"> <br><br>
+
+
+              <label for="job_description">Job Description/Responsibilities:</label>
+              <input id="job_description" name="job_description"></textarea> <br><br>
+            
+
+              <label for="achievements">Achievements/Accomplishments:</label>
+              <input id="achievements" name="achievements"></textarea>  <br><br>
+      </fieldset>
+      <br><br>
+
+      <!-- Skills -->
+
+      <fieldset>
+        <legend>Skills</legend>
+
+        <label for="technical_skills">Technical Skills:</label>
+        <input id="technical_skills" name="technical_skills"></textarea><br><br>
+        
+        <label for="soft_skills">Soft Skills:</label>
+        <input id="soft_skills" name="soft_skills"></textarea><br><br>
+        
+        <label for="language_proficiency">Language Proficiency:</label>
+        <input id="language_proficiency" name="language_proficiency"></textarea><br><br>
+        
+        <label for="certifications">Certifications:</label>
+        <input id="certifications" name="certifications"></textarea><br><br>
+        
+        <label for="experience">Experience:</label>
+        <input type="number" id="experience" name="experience">
+        <label for="experience">Years</label><br><br>
+
+      </fieldset>
+<!-- Button -->
+
+<button type="submit">Generate Resume</button>
+   
+    </form>
+    <br>
+
+    <!-- Dynamic Resume -->
+     <div id="resume-display">
+      <!-- Resume will be generated below -->
+     </div>
+
+     <script src="script.js"></script>
+
+
+
+  </body>
+</html>
